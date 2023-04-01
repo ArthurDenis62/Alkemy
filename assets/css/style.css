@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: #3b3838;
+}
+
+header {
+  background-color: #2a2929;
+  height: 55px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0px 15px 0px 15px;
+}
+
+#navbar .first {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+}
+
+#navbar .second {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 25%;
+}
+
+a {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: white;
+    transition: 0.2s;
+}
+
+a:hover {
+    background-color: #d9570c;
+    padding: 10px;
+    border-radius: 1em;
+    transition: 0.2s;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: #d9570c;
+    transition: 0.2s;
+}
+
+.containerAll {
+    width: 99%;
+    margin: 2em auto 0px auto;
+}
+
+#humberger {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    #navbar {
+        display: none;
+    }
+    #humberger {
+        display: block;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0px 0px 0px 15px;
+    }
+    #humberger button {
+        font-size: 2em;
+        color: white;
+        border: none;
+        background-color: transparent;
+    }
+}
