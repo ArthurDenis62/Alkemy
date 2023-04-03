@@ -11,8 +11,9 @@ body {
 }
 
 header {
-  background-color: #2a2929;
-  height: 55px;
+    height: 55px;
+    background-color: #2a2929;
+    box-shadow: 0px 0px 10px 2px #262525;
 }
 
 header nav {
@@ -33,21 +34,6 @@ header nav {
     display: flex;
     flex-direction: row-reverse;
     width: 25%;
-}
-
-a {
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 0.2px;
-    color: white;
-    transition: 0.2s;
-}
-
-a:hover {
-    background-color: #d9570c;
-    padding: 10px;
-    border-radius: 1em;
-    transition: 0.2s;
 }
 
 .btn {
@@ -71,6 +57,88 @@ a:hover {
     width: 99%;
     margin: 2em auto 0px auto;
 }
+
+.bigCards {
+    background-color: #564c4c;
+    width: 500px;
+    height: 350px;
+    border-radius: 1em;
+    box-shadow: 0px 0px 5px 0px white;
+}
+
+.cards-flex {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4em;
+}
+
+.title {
+    font-size: 1.4em;
+    font-weight: bold;
+    width: 90%;
+    padding: 10px;
+    margin-left: 10px;
+    color: white;
+    border-bottom: solid 1px #c7860f;
+}
+
+.notesPlus {
+    position: absolute;
+    right: 20px;
+}
+
+.notesPlus a {
+    color: white;
+    font-size: 1.4em;
+}
+
+.subTitle {
+    color: white;
+    font-size: 1.4em;
+    display: table;
+    border-bottom: solid 1px #c7860f;
+}
+
+.btn-close {
+    position: absolute;
+    width: 40%;
+    bottom: 20px;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+.champs {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+
+#popUpNotes {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 300px;
+    background-color: #1e1818;
+    border: none;
+    border-radius: 1em;
+    padding: 20px;
+}
+
+#popUpNotes button:first-child {
+    left: 25px;
+}
+
+#popUpNotes button:last-child {
+    right: 25px;
+}
+
 
 #humberger {
     display: none;
