@@ -63,3 +63,14 @@ $(function() {
       });
     });
   });
+
+  $(function() {
+    $('#mesTaches').click(function() {
+      $.ajax({
+        url: 'MesTaches.html',
+        success: function(data) {
+          $('#ContenuGlobal').html(data);
+        }
+      });
+    });
+  });

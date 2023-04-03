@@ -27,6 +27,7 @@ header nav {
 #navbar .first {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 75%;
 }
 
@@ -123,8 +124,8 @@ header nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
-    height: 300px;
+    width: 75%;
+    height: 50%;
     background-color: #1e1818;
     border: none;
     border-radius: 1em;
@@ -137,8 +138,8 @@ header nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
-    height: 300px;
+    width: 75%;
+    height: 50%;
     background-color: #1e1818;
     border: none;
     border-radius: 1em;
