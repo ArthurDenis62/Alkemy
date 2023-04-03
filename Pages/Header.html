@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Alkemy, qui gère la gestion de vos projets, ainsi que vos plannings ect... .">
     <title>Outil de gestion</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/lib.css">
@@ -48,13 +49,27 @@
                         <a href="#"><h1 class="title">Projets :</h1></a>
                     </article>
                     <article class="bigCards">
-                        <a href="#"><h1 class="title">Toto :</h1></a>
+                        <div class="flexAlCent" style="position: relative;">
+                            <a href="#" style="display: contents"><h1 class="title">Mes tâches :</h1></a>
+                            <span class="notesPlus"><a href="#" id="popUpTachesPlus" aria-label="Popup pour ajouter une nouvelle tâche"><i class="fa fa-plus"></i></a></span>
+                        </div>
                     </article>
                     <article class="bigCards">
                         <div class="flexAlCent" style="position: relative;">
                             <a href="#" style="display: contents"><h1 class="title">Notes :</h1></a>
-                            <span class="notesPlus"><a href="#" id="popUpNotesPlus"><i class="fa fa-plus"></i></a></span>
+                            <span class="notesPlus"><a href="#" id="popUpNotesPlus" aria-label="Popup pour ajouter une nouvelle note"><i class="fa fa-plus"></i></a></span>
                         </div>
+                        <table id="tableau">
+                            <thead>
+                                <tr>
+                                    <th>Libellé</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
                     </article>
                 </section>
                 <div id="popUpNotes">
@@ -62,13 +77,34 @@
                     <div>
                         <ul>
                             <li class="champs">
-                                <label for="noteLibelle">Libellé :&nbsp;&nbsp;</label>
-                                <input type="text" id="noteLibelle" name="noteLibelle">
+                                <label for="nom">Libellé :&nbsp;&nbsp;</label>
+                                <input type="text" id="nom" name="nom">
+                            </li><br>
+                            <li class="flexFlDirct">
+                                <label for="message">Description :&nbsp;&nbsp;</label><br>
+                                <textarea name="message" id="message" cols="1" rows="6"></textarea>
                             </li>
                         </ul>
                     </div>
-                    <button type="button" class="btn-close orange" id="close">Fermer</button>
-                    <button type="button" class="btn-close vert" id="close">Valider</button>
+                    <button type="button" class="btn-close orange" id="closeNotes" style="left: 20px">Fermer</button>
+                    <button type="button" class="btn-close vert" id="valider" style="right: 20px">Valider</button>
+                </div>
+                <div id="popUpTaches">
+                    <h2 class="subTitle">Ajouter une nouvelle tâche :</h2>
+                    <div>
+                        <ul>
+                            <li class="champs">
+                                <label for="nom">Libellé :&nbsp;&nbsp;</label>
+                                <input type="text" id="nom" name="nom">
+                            </li><br>
+                            <li class="flexFlDirct">
+                                <label for="message">Description :&nbsp;&nbsp;</label><br>
+                                <textarea name="message" id="message" cols="1" rows="6"></textarea>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn-close orange" id="closeTaches" style="left: 20px">Fermer</button>
+                    <button type="button" class="btn-close vert" id="valider" style="right: 20px">Valider</button>
                 </div>
             </div>
         </section>

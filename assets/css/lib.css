@@ -3,6 +3,11 @@
     align-items: center;
 }
 
+.flexFlDirct {
+    display: flex;
+    flex-direction: column;
+}
+
 .orange {
     background-color: orange;
 }
@@ -24,4 +29,13 @@ input {
     border: none;
     border-radius: 0.4em;
     background-color: #584242;
+}
+
+textarea {
+    color: white;
+    padding: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 0.4em;
+    background-color: #584242;   
 }
