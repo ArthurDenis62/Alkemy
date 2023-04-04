@@ -51,27 +51,29 @@
                         <a href="#"><h1 class="title">Projets :</h1></a>
                     </article>
                     <article class="bigCards">
-                        <div class="flexAlCent" style="position: relative;">
+                        <div class="flexAlCent" style="position:relative;border-bottom:solid 1px #c7860f">
                             <a href="#" style="display: contents"><h1 class="title">Mes tâches :</h1></a>
                             <span class="notesPlus"><a href="#" id="popUpTachesPlus" aria-label="Popup pour ajouter une nouvelle tâche"><i class="fa fa-plus"></i></a></span>
                         </div>
                     </article>
                     <article class="bigCards">
-                        <div class="flexAlCent" style="position: relative;">
+                        <div class="flexAlCent" style="position:relative;border-bottom:solid 1px #c7860f">
                             <a href="#" style="display: contents"><h1 class="title">Notes :</h1></a>
                             <span class="notesPlus"><a href="#" id="popUpNotesPlus" aria-label="Popup pour ajouter une nouvelle note"><i class="fa fa-plus"></i></a></span>
                         </div>
-                        <table id="tableau">
-                            <thead>
-                                <tr>
-                                    <th>Libellé</th>
-                                    <th>Description</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-
-                            </tbody>
-                        </table>
+                        <div class="tableauContainer">
+                            <table id="tableauNotes">
+                                <thead style="position:sticky;top:-1px">
+                                    <tr>
+                                        <th>Libellé</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+    
+                                </tbody>
+                            </table>
+                        </div>
                     </article>
                 </section>
                 <div id="popUpNotes">
@@ -79,34 +81,34 @@
                     <div>
                         <ul>
                             <li class="champs">
-                                <label for="nom">Libellé :&nbsp;&nbsp;</label>
-                                <input type="text" id="nom" name="nom">
+                                <label for="libelleNotes">Libellé :&nbsp;&nbsp;</label>
+                                <input type="text" id="libelleNotes" name="libelleNotes">
                             </li><br>
                             <li class="flexFlDirct">
-                                <label for="message">Description :&nbsp;&nbsp;</label><br>
-                                <textarea name="message" id="message" cols="1" rows="6"></textarea>
+                                <label for="descriptionNotes">Description :&nbsp;&nbsp;</label><br>
+                                <textarea name="descriptionNotes" id="descriptionNotes" cols="1" rows="10"></textarea>
                             </li>
                         </ul>
                     </div>
                     <button type="button" class="btn-close orange" id="closeNotes" style="left: 20px">Fermer</button>
-                    <button type="button" class="btn-close vert" id="valider" style="right: 20px">Valider</button>
+                    <button type="button" class="btn-close vert" id="validerNotes" style="right: 20px">Valider</button>
                 </div>
                 <div id="popUpTaches">
                     <h2 class="subTitle">Ajouter une nouvelle tâche :</h2>
                     <div>
                         <ul>
                             <li class="champs">
-                                <label for="nom">Libellé :&nbsp;&nbsp;</label>
-                                <input type="text" id="nom" name="nom">
+                                <label for="nomTaches">Libellé :&nbsp;&nbsp;</label>
+                                <input type="text" id="nomTaches" name="nomTaches">
                             </li><br>
                             <li class="flexFlDirct">
-                                <label for="message">Description :&nbsp;&nbsp;</label><br>
-                                <textarea name="message" id="message" cols="1" rows="6"></textarea>
+                                <label for="messageTaches">Description :&nbsp;&nbsp;</label><br>
+                                <textarea name="messageTaches" id="messageTaches" cols="50" rows="10"></textarea>
                             </li>
                         </ul>
                     </div>
                     <button type="button" class="btn-close orange" id="closeTaches" style="left: 20px">Fermer</button>
-                    <button type="button" class="btn-close vert" id="valider" style="right: 20px">Valider</button>
+                    <button type="button" class="btn-close vert" id="validerTaches" style="right: 20px">Valider</button>
                 </div>
             </div>
         </section>

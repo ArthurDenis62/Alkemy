@@ -62,7 +62,7 @@ header nav {
 .bigCards {
     background-color: #564c4c;
     width: 650px;
-    height: 450px;
+    height: 470px;
     border-radius: 1em;
     box-shadow: 0px 0px 5px 0px white;
 }
@@ -80,7 +80,6 @@ header nav {
     padding: 10px;
     margin-left: 10px;
     color: white;
-    border-bottom: solid 1px #c7860f;
 }
 
 .notesPlus {
@@ -118,13 +117,21 @@ header nav {
     margin-top: 1em;
 }
 
+.tableauContainer {
+    min-height: 403px;
+    height: 403px;
+    min-width: 100px;
+    width: 100%;
+    overflow: auto;
+}
+
 #popUpNotes {
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75%;
+    width: 50%;
     height: 50%;
     background-color: #1e1818;
     border: none;
@@ -138,7 +145,7 @@ header nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75%;
+    width: 50%;
     height: 50%;
     background-color: #1e1818;
     border: none;
@@ -150,9 +157,17 @@ header nav {
     display: none;
 }
 
+#tableauNotes {
+    border-collapse: collapse;
+    width: 98%;
+    margin: 10px auto;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
 #tableau {
     border-collapse: collapse;
-    width: 96%;
+    width: 98%;
     margin: 10px auto;
     max-height: 500px;
     overflow-y: auto;
@@ -199,7 +214,7 @@ tr:nth-child(even) {
     }
 }
 
-@media (max-width: 825px) {
+@media (max-width: 1050px) {
     #navbar {
         display: none;
     }
@@ -216,4 +231,21 @@ tr:nth-child(even) {
         border: none;
         background-color: transparent;
     }
+}
+
+@media (max-width: 825px) {
+    #popUpNotes {
+        width: 85%;
+    }
+    #popUpTaches {
+        width: 85%;
+    }
+}
+
+
+
+.TODO {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
 }
