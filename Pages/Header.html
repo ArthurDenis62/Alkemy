@@ -62,7 +62,7 @@
                             <span class="notesPlus"><a href="#" id="popUpNotesPlus" aria-label="Popup pour ajouter une nouvelle note"><i class="fa fa-plus"></i></a></span>
                         </div>
                         <div class="tableauContainer">
-                            <table id="tableauNotes">
+                            <table id="tableau">
                                 <thead style="position:sticky;top:-1px">
                                     <tr>
                                         <th>Libellé</th>
@@ -81,17 +81,17 @@
                     <div>
                         <ul>
                             <li class="champs">
-                                <label for="libelleNotes">Libellé :&nbsp;&nbsp;</label>
-                                <input type="text" id="libelleNotes" name="libelleNotes">
+                                <label for="nom">Libellé :&nbsp;&nbsp;</label>
+                                <input type="text" id="nom" name="nom">
                             </li><br>
                             <li class="flexFlDirct">
-                                <label for="descriptionNotes">Description :&nbsp;&nbsp;</label><br>
-                                <textarea name="descriptionNotes" id="descriptionNotes" cols="1" rows="10"></textarea>
+                                <label for="message">Description :&nbsp;&nbsp;</label><br>
+                                <textarea name="message" id="message" cols="1" rows="10"></textarea>
                             </li>
                         </ul>
                     </div>
                     <button type="button" class="btn-close orange" id="closeNotes" style="left: 20px">Fermer</button>
-                    <button type="button" class="btn-close vert" id="validerNotes" style="right: 20px">Valider</button>
+                    <button type="button" class="btn-close vert" id="valider" style="right: 20px">Valider</button>
                 </div>
                 <div id="popUpTaches">
                     <h2 class="subTitle">Ajouter une nouvelle tâche :</h2>

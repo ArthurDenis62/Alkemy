@@ -196,6 +196,24 @@ tr:nth-child(even) {
     background-color: #857d7d;
 }
 
+.cntCards {
+    position: relative;
+    width: 650px;
+    height: 750px;
+    margin: 5em auto;
+    border-radius: 2em;
+    box-shadow: 0px 0px 20px 1px black;
+    background-color: white;
+}
+
+.cntContenu {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    left: 10%;
+    bottom: 10%;
+}
+
 @media (max-width: 2050px) {
     .bigCards {
         width: 500px;
@@ -245,7 +263,7 @@ tr:nth-child(even) {
 
 
 .TODO {
-    font-size: 2em;
+    font-size: 2em; 
     font-weight: bold;
     color: white;
 }
