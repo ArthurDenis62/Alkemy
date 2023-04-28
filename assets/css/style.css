@@ -6,6 +6,10 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+main {
+    margin: 2em 2em 2em 2em;
+}
+
 body {
     background-color: #3b3838;
 }
@@ -41,7 +45,7 @@ header nav {
     padding: 10px;
     font-size: 18px;
     font-weight: 500;
-    border: none;
+    border: solid 1px grey;
     border-radius: 1em;
     cursor: pointer;
     color: white;
@@ -76,7 +80,7 @@ header nav {
 .title {
     font-size: 1.4em;
     font-weight: bold;
-    width: 90%;
+    width: auto;
     padding: 10px;
     margin-left: 10px;
     color: white;
@@ -266,4 +270,74 @@ tr:nth-child(even) {
     font-size: 2em; 
     font-weight: bold;
     color: white;
+}
+
+.top_Pages {
+    height: 50px;
+    max-height: 50px;
+    margin: 2em auto;
+}
+
+.top_Pages2 {
+    display: flex;
+}
+
+.block_mental {
+    display: flex; 
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.block_mental {
+    display: flex;
+    max-width: 1800px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+.cart_mental {
+    max-width: 500px;
+    width: 400px;
+    max-height: 200px;
+    height: 200px;
+    margin: 0 2em 0 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.74);
+    box-shadow: 0px 0px 8px 0px black;
+    transition: 0.2s;
+}
+
+.cart_mental:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.cart_title {
+    font-size: 2em;
+    color: rgb(15, 62, 105);
+    text-align: center;
+    line-height: 2em;
+}
+
+.big_cart_title {
+    font-size: 3em;
+    font-weight: bold;
+    color: orange;
+}
+
+.subbig_cart_title {
+    font-size: 2em;
+    text-decoration: underline;
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 10px;
+}
+
+.block_mental2 p {
+    font-size: 1.6em;
+    color: grey;
+    line-height: 1.6em;
 }
