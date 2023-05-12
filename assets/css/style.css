@@ -341,3 +341,38 @@ tr:nth-child(even) {
     color: grey;
     line-height: 1.6em;
 }
+
+.def {
+    background-color: #6b4f4f;
+    padding: 10px;
+    border-radius: 1em;
+    box-shadow: 0px 0px 10px 0px white;
+}
+
+.def ul li {
+    list-style: disc;
+}
+
+.def__Title {
+    font-size: 2em;
+    font-weight: bold;
+    color: orange;
+}
+
+.def__SubTitle {
+    font-size: 1.6em;
+    font-weight: 500;
+    color: white;
+}
+
+.def__Para {
+    font-size: 1.4em;
+    font-weight: 500;
+    line-height: 1.4em;
+    color: #bea4a4;
+    margin-left: 1em;
+}
+
+.methodeJS ul li span {
+    background-color: red;
+}
