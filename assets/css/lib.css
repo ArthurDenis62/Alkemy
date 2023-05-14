@@ -39,3 +39,28 @@ textarea {
     border-radius: 0.4em;
     background-color: #584242;   
 }
+
+.mb-2 {
+    margin-bottom: 2em;
+}
+
+.mt-2 {
+    margin-top: 2em;
+}
+
+.btn-reset {
+    background-color: #584242;
+    border: 0 solid;
+    width: 110px;
+    height: 20px;
+    border-radius: 0.4em;
+    margin-left: 0.8em;
+    font-size: 1em;
+    font-weight: 500;
+    color: red;
+    cursor: pointer;
+}
+
+.btn-reset:hover {
+    background-color: #634b4b;
+}
