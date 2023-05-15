@@ -2,7 +2,6 @@
     <input type="text" id="search-box" placeholder="Rechercher...">
     <button type="button" class="btn-reset" onclick="resetPage()">Réinitialiser</button>
 </div>
-
 <div class="definition-container">
     <article class="def mt-2">
         <h1 class="def__Title">Scope (Portée) :</h1><br>
@@ -18,9 +17,7 @@
             <li>Scope pollution () : se produit lorsque trop de variables existent dans un espace de noms ou que les noms de variables sont réutilisés.</li>
         </ul>
     </article>
-
     <br><br><br>
-
     <article class="def">
         <h1 class="def__Title">Array (Tableau) :</h1><br>
         <p class="def__SubTitle">Nous avons appris ces concepts concernant les tableaux :</p><br>
@@ -40,9 +37,7 @@
             <li>Pour accéder aux éléments des tableaux imbriqués, chaînez les index en utilisant la notation parenthèses.</li>
         </ul>
     </article>
-
     <br><br><br>
-
     <article class="def">
         <h1 class="def__Title">Loops (Boucle) :</h1><br>
         <p class="def__SubTitle">Nous avons appris à écrire du code plus propre avec des boucles.</p><br>
@@ -57,48 +52,49 @@
             <li>Le mot clé break permet aux programmes de sortir d'une boucle lors de l'exécution de son bloc</li>
         </ul>
     </article>
+    <br><br><br>
+    <article class="def">
+        <h1 class="def__Title">Fonctions d'ordre supérieur (Higher-order functions) :</h1><br>
+        <p class="def__SubTitle">Passons en revue ce que nous avons appris dans cette leçon :</p><br>
+        <ul class="def__Para">
+            <li>L'abstraction nous permet d'écrire du code compliqué d'une manière facile à réutiliser, à déboguer et à comprendre pour les lecteurs humains.</li>
+            <li>Nous pouvons travailler avec des fonctions de la même manière que nous travaillons avec tout autre type de données, y compris en les réaffectant à de nouvelles variables.</li>
+            <li>Les fonctions JavaScript sont des objets de première classe, elles ont donc des propriétés et des méthodes comme tout autre objet.</li>
+            <li>Les fonctions peuvent être transmises à d'autres fonctions en tant que paramètres.</li>
+            <li>Une fonction d'ordre supérieur est une fonction qui accepte des fonctions comme paramètres, renvoie une fonction ou les deux.</li>
+        </ul>
+    </article>
 </div>
 
 <script>
-    function searchDefinitions() {
-  // Récupérer le texte saisi par l'utilisateur
-  var searchTerm = document.getElementById('search-box').value.toLowerCase();
-  
-  // Récupérer toutes les définitions de la page
-  var def = document.getElementsByClassName('def');
-  
-  // Parcourir toutes les définitions et cacher celles qui ne correspondent pas au texte saisi
-  for (var i = 0; i < def.length; i++) {
-    var def = def[i];
-    if (def.textContent.toLowerCase().indexOf(searchTerm) === -1) {
+  function searchDefinitions() {
+    var searchTerm = document.getElementById('search-box').value.toLowerCase();
+    var def = document.getElementsByClassName('def');
+    for (var i = 0; i < def.length; i++) {
+      var def = def[i];
+      if (def.textContent.toLowerCase().indexOf(searchTerm) === -1) {
         def.style.display = 'none';
-    } else {
+      } else {
         def.style.display = '';
+      }
     }
-  }
-  
-  // Afficher la première définition correspondante
-  for (var i = 0; i < def.length; i++) {
-    var def = def[i];
-    if (def.style.display !== 'none') {
+    for (var i = 0; i < def.length; i++) {
+      var def = def[i];
+      if (def.style.display !== 'none') {
         def.style.order = -1;
-      break;
+        break;
+      }
     }
   }
-}
 
-document.getElementById('search-box').addEventListener('input', searchDefinitions);
+  document.getElementById('search-box').addEventListener('input', searchDefinitions);
 
-function resetPage() {
-  // Réinitialiser le champ de recherche
-  document.getElementById('search-box').value = '';
-  
-  // Réafficher toutes les définitions
-  var def = document.getElementsByClassName('def');
-  for (var i = 0; i < def.length; i++) {
-    def[i].style.display = '';
-    def[i].style.order = '';
+  function resetPage() {
+    document.getElementById('search-box').value = '';
+    var def = document.getElementsByClassName('def');
+    for (var i = 0; i < def.length; i++) {
+      def[i].style.display = '';
+      def[i].style.order = '';
+    }
   }
-}
-
 </script>
